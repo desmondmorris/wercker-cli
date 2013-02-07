@@ -28,6 +28,8 @@ def handle_commands(args):
         as command_clear_settings
     from werckercli.commands.login import login\
         as command_login
+    from werckercli.commands.validate import validate\
+        as command_validate
 
     if args['app'] and args['create']:
         command_create()
@@ -40,6 +42,8 @@ def handle_commands(args):
         command_login()
     elif args['logout']:
         command_clear_settings()
+    elif args['validate']:
+        command_validate()
 
 
 def enter_url(loop=True):

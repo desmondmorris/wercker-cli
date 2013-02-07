@@ -11,6 +11,7 @@ Usage:
     wercker deploy <name>
     wercker app link
     wercker app create
+    wercker validate
     wercker (-h | --help)
     wercker --version
 
